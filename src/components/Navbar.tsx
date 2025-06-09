@@ -10,6 +10,7 @@ import {
   useColorMode,
   useColorModeValue,
   useDisclosure,
+  Link,
 } from '@chakra-ui/react'
 import {
   MoonIcon,
