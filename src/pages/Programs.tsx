@@ -74,7 +74,6 @@ const ProgramCard = ({ title, description, icon, delay }: ProgramCardProps) => {
 
 const Programs = () => {
   const bgColor = useColorModeValue('gray.50', 'gray.900')
-  const textColor = useColorModeValue('gray.800', 'gray.100')
 
   const programs = [
     {
