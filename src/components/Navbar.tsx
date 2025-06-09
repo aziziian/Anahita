@@ -11,8 +11,8 @@ import {
   useColorModeValue,
   useDisclosure,
   Link,
-  ButtonProps,
 } from '@chakra-ui/react'
+import type { ButtonProps } from '@chakra-ui/react'
 import {
   MoonIcon,
   SunIcon,

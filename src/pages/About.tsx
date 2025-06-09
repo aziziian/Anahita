@@ -2,7 +2,7 @@ import { Box, Container, Heading, Text, VStack, SimpleGrid, useColorModeValue, I
 import { FaHandHoldingHeart, FaLightbulb, FaUsers } from 'react-icons/fa'
 import { NAVBAR_HEIGHT } from '../components/Navbar'
 import { motion } from 'framer-motion'
-import { IconType } from 'react-icons'
+import type { IconType } from 'react-icons'
 
 const MotionBox = motion(Box)
 const MotionCard = motion(Card)
