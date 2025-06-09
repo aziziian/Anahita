@@ -7,11 +7,6 @@ import {
   Stack,
   useColorModeValue,
   VStack,
-  Icon,
-  Stat,
-  StatLabel,
-  StatNumber,
-  StatHelpText,
   Alert,
   AlertIcon,
 } from '@chakra-ui/react'
@@ -82,93 +77,4 @@ const Donate = () => {
   )
 }
 
-export default Donate
-
-interface StatBoxProps {
-  label: string;
-  number: string | number;
-  helpText: string;
-}
-
-interface DonationCardProps {
-  title: string;
-  description: string;
-  icon: any;
-  amount: string | number;
-  featured?: boolean;
-}
-
-const StatBox = ({ label, number, helpText }: StatBoxProps) => {
-  return (
-    <Stat
-      px={{ base: 4, md: 8 }}
-      py={'5'}
-      shadow={'xl'}
-      border={'1px solid'}
-      borderColor={useColorModeValue('gray.200', 'gray.500')}
-      rounded={'lg'}
-      textAlign="center"
-    >
-      <StatLabel fontSize={'xl'} fontWeight={'medium'}>
-        {label}
-      </StatLabel>
-      <StatNumber fontSize={'4xl'} fontWeight={'bold'} color="brand.500">
-        {number}
-      </StatNumber>
-      <StatHelpText fontSize={'sm'}>{helpText}</StatHelpText>
-    </Stat>
-  )
-}
-
-const DonationCard = ({ title, description, icon, amount, featured = false }: DonationCardProps) => {
-  const bgColor = useColorModeValue(
-    featured ? 'brand.50' : 'white',
-    featured ? 'brand.900' : 'gray.800'
-  )
-  const borderColor = useColorModeValue(
-    featured ? 'brand.200' : 'gray.200',
-    featured ? 'brand.700' : 'gray.700'
-  )
-
-  return (
-    <Stack
-      bg={bgColor}
-      border="2px"
-      borderColor={borderColor}
-      boxShadow={'xl'}
-      p={8}
-      rounded={'xl'}
-      align={'center'}
-      pos={'relative'}
-      _hover={{
-        transform: 'translateY(-5px)',
-        transition: 'all 0.3s ease',
-      }}
-    >
-      <Icon as={icon} w={12} h={12} color="brand.500" />
-      <Box textAlign="center">
-        <Heading size="md" mb={2}>
-          {title}
-        </Heading>
-        <Text fontSize={'sm'} color={'gray.500'}>
-          {description}
-        </Text>
-      </Box>
-      <Stack direction={'row'} align={'center'} justify={'center'}>
-        <Text fontSize={'3xl'} fontWeight={600}>
-          $
-        </Text>
-        <Text fontSize={'5xl'} fontWeight={900}>
-          {amount}
-        </Text>
-      </Stack>
-      <Button
-        w={'full'}
-        colorScheme="brand"
-        variant={featured ? 'solid' : 'outline'}
-      >
-        Donate Now
-      </Button>
-    </Stack>
-  )
-} 
+export default Donate 

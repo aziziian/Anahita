@@ -9,7 +9,6 @@ import {
   Stack,
   useColorMode,
   useColorModeValue,
-  useDisclosure,
   Link,
 } from '@chakra-ui/react'
 import type { ButtonProps } from '@chakra-ui/react'
@@ -59,7 +58,6 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   const bgColor = useColorModeValue('white', 'gray.800')
   const borderColor = useColorModeValue('gray.200', 'gray.700')
-  const { isOpen, onToggle } = useDisclosure()
   const location = useLocation()
 
   return (

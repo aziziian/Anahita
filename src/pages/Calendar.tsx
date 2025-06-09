@@ -17,7 +17,6 @@ import {
 import { CalendarIcon, TimeIcon } from '@chakra-ui/icons'
 import { MdLocationOn } from 'react-icons/md'
 import { motion } from 'framer-motion'
-import type { IconType } from 'react-icons'
 
 const MotionBox = motion(Box)
 const MotionCard = motion(Card)

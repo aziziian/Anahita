@@ -9,17 +9,14 @@ import {
   SimpleGrid,
   Icon,
   useColorModeValue,
-  Image,
   HStack,
 } from '@chakra-ui/react'
 import { Link as RouterLink } from 'react-router-dom'
 import { FaGraduationCap, FaHandHoldingHeart, FaUsers } from 'react-icons/fa'
-import { IconType } from 'react-icons'
-import { NAVBAR_HEIGHT } from '../components/Navbar'
+import type { IconType } from 'react-icons'
 import { motion } from 'framer-motion'
 
 const MotionBox = motion(Box)
-const MotionFlex = motion(Flex)
 const MotionVStack = motion(VStack)
 
 interface FeatureProps {
@@ -90,7 +87,6 @@ const Feature = ({ title, text, icon, delay }: FeatureProps) => {
 
 const Home = () => {
   const bgColor = useColorModeValue('gray.50', 'gray.900')
-  const textColor = useColorModeValue('gray.800', 'gray.100')
   const sectionBg = useColorModeValue('white', 'gray.800')
   const borderColor = useColorModeValue('gray.200', 'gray.700')
 

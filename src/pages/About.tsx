@@ -1,6 +1,5 @@
-import { Box, Container, Heading, Text, VStack, SimpleGrid, useColorModeValue, Icon, Flex, Card, CardBody, Stack, Avatar, HStack, Button } from '@chakra-ui/react'
+import { Box, Container, Heading, Text, VStack, SimpleGrid, useColorModeValue, Icon, Card, CardBody, Stack, Avatar, HStack } from '@chakra-ui/react'
 import { FaHandHoldingHeart, FaLightbulb, FaUsers } from 'react-icons/fa'
-import { NAVBAR_HEIGHT } from '../components/Navbar'
 import { motion } from 'framer-motion'
 import type { IconType } from 'react-icons'
 
