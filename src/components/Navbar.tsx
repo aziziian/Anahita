@@ -6,15 +6,12 @@ import {
   HStack,
   Heading,
   IconButton,
-  Link,
   Stack,
   useColorMode,
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react'
 import {
-  CloseIcon,
-  HamburgerIcon,
   MoonIcon,
   SunIcon,
 } from '@chakra-ui/icons'

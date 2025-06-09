@@ -1,7 +1,7 @@
-import { Box, Container, Heading, Text, VStack, SimpleGrid, Image, useColorModeValue, Icon, Flex, Card, CardBody, Stack, Avatar, HStack, Divider, Button } from '@chakra-ui/react'
+import { Box, Container, Heading, Text, VStack, SimpleGrid, useColorModeValue, Icon, Flex, Card, CardBody, Stack, Avatar, HStack, Button } from '@chakra-ui/react'
 import { FaHandHoldingHeart, FaLightbulb, FaUsers } from 'react-icons/fa'
 import { NAVBAR_HEIGHT } from '../components/Navbar'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const MotionBox = motion(Box)
 const MotionCard = motion(Card)
@@ -343,11 +343,9 @@ const About = () => {
             </MotionBox>
 
             <VStack spacing={12} w="full">
-              <AnimatePresence>
-                {leaders.map((leader, index) => (
-                  <LeaderCard key={index} {...leader} delay={0.3 * index} />
-                ))}
-              </AnimatePresence>
+              {leaders.map((leader, index) => (
+                <LeaderCard key={index} {...leader} delay={0.3 * index} />
+              ))}
             </VStack>
           </VStack>
         </Container>

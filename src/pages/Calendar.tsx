@@ -16,7 +16,6 @@ import {
 } from '@chakra-ui/react'
 import { CalendarIcon, TimeIcon } from '@chakra-ui/icons'
 import { MdLocationOn } from 'react-icons/md'
-import { NAVBAR_HEIGHT } from '../components/Navbar'
 import { motion } from 'framer-motion'
 
 const MotionBox = motion(Box)

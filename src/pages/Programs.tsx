@@ -1,5 +1,4 @@
 import { Box, Container, Heading, Text, VStack, SimpleGrid, useColorModeValue, Icon } from '@chakra-ui/react'
-import { NAVBAR_HEIGHT } from '../components/Navbar'
 import { motion } from 'framer-motion'
 import { FaGraduationCap, FaUsers, FaChalkboardTeacher, FaGlobeAmericas, FaHandsHelping, FaBook } from 'react-icons/fa'
 

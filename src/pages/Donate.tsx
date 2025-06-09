@@ -5,11 +5,9 @@ import {
   Heading,
   Text,
   Stack,
-  SimpleGrid,
   useColorModeValue,
   VStack,
   Icon,
-  HStack,
   Stat,
   StatLabel,
   StatNumber,
@@ -17,8 +15,6 @@ import {
   Alert,
   AlertIcon,
 } from '@chakra-ui/react'
-import { FaHeart, FaHandHoldingHeart, FaHandsHelping } from 'react-icons/fa'
-import { NAVBAR_HEIGHT } from '../components/Navbar'
 
 const Donate = () => {
   const bgColor = useColorModeValue('gray.50', 'gray.900')
