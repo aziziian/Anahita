@@ -75,7 +75,6 @@ const ValueCard = ({ icon, title, description, delay }: ValueCardProps) => {
 
 const LeaderCard = ({ name, role, description, imagePlaceholder, delay }: LeaderCardProps) => {
   const cardBg = useColorModeValue('white', 'gray.800')
-  const borderColor = useColorModeValue('gray.200', 'gray.700')
   const roleColor = useColorModeValue('blue.500', 'blue.200')
 
   return (

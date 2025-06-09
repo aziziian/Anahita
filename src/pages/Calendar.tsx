@@ -222,7 +222,6 @@ const EventCard = ({
   delay,
 }: EventCardProps) => {
   const bgColor = useColorModeValue('white', 'gray.800')
-  const borderColor = useColorModeValue('gray.200', 'gray.700')
   const iconColor = useColorModeValue('blue.500', 'blue.200')
 
   return (
