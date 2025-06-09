@@ -145,9 +145,6 @@ const LeaderCard = ({ name, role, description, imagePlaceholder, delay }: Leader
 const About = () => {
   const bgColor = useColorModeValue('gray.50', 'gray.900')
   const sectionBg = useColorModeValue('white', 'gray.800')
-  const borderColor = useColorModeValue('gray.200', 'gray.700')
-  const gradientStart = useColorModeValue('blue.50', 'blue.900')
-  const gradientEnd = useColorModeValue('purple.50', 'purple.900')
 
   const values = [
     {

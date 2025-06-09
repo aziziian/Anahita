@@ -23,7 +23,6 @@ const MotionCard = motion(Card)
 
 const Calendar = () => {
   const bgColor = useColorModeValue('gray.50', 'gray.900')
-  const textColor = useColorModeValue('gray.800', 'gray.100')
   const cardBg = useColorModeValue('white', 'gray.800')
 
   const events = [

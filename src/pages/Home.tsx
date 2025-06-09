@@ -87,8 +87,6 @@ const Feature = ({ title, text, icon, delay }: FeatureProps) => {
 
 const Home = () => {
   const bgColor = useColorModeValue('gray.50', 'gray.900')
-  const sectionBg = useColorModeValue('white', 'gray.800')
-  const borderColor = useColorModeValue('gray.200', 'gray.700')
 
   return (
     <Box bg={bgColor} minH="calc(100vh - 60px)">
