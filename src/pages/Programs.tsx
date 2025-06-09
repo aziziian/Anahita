@@ -1,13 +1,14 @@
 import { Box, Container, Heading, Text, VStack, SimpleGrid, useColorModeValue, Icon } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { FaGraduationCap, FaUsers, FaChalkboardTeacher, FaGlobeAmericas, FaHandsHelping, FaBook } from 'react-icons/fa'
+import { IconType } from 'react-icons'
 
 const MotionBox = motion(Box)
 
 interface ProgramCardProps {
   title: string
   description: string
-  icon: any
+  icon: IconType
   delay: number
 }
 

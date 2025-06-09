@@ -2,15 +2,24 @@ import { Box, Container, Heading, Text, VStack, SimpleGrid, useColorModeValue, I
 import { FaHandHoldingHeart, FaLightbulb, FaUsers } from 'react-icons/fa'
 import { NAVBAR_HEIGHT } from '../components/Navbar'
 import { motion } from 'framer-motion'
+import { IconType } from 'react-icons'
 
 const MotionBox = motion(Box)
 const MotionCard = motion(Card)
 
 interface ValueCardProps {
-  icon: any
-  title: string
-  description: string
-  delay: number
+  icon: IconType;
+  title: string;
+  description: string;
+  delay: number;
+}
+
+interface LeaderCardProps {
+  name: string;
+  role: string;
+  description: string;
+  imagePlaceholder?: string;
+  delay: number;
 }
 
 const ValueCard = ({ icon, title, description, delay }: ValueCardProps) => {
@@ -63,14 +72,6 @@ const ValueCard = ({ icon, title, description, delay }: ValueCardProps) => {
       </CardBody>
     </MotionCard>
   )
-}
-
-interface LeaderCardProps {
-  name: string
-  role: string
-  description: string
-  imagePlaceholder?: string
-  delay: number
 }
 
 const LeaderCard = ({ name, role, description, imagePlaceholder, delay }: LeaderCardProps) => {

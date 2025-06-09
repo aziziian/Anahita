@@ -11,6 +11,7 @@ import {
   useColorModeValue,
   useDisclosure,
   Link,
+  ButtonProps,
 } from '@chakra-ui/react'
 import {
   MoonIcon,
@@ -25,7 +26,12 @@ const MotionBox = motion(Box)
 // Export this constant so other components can use it for spacing
 export const NAVBAR_HEIGHT = "80px"
 
-const NavButton = ({ to, children, isActive, ...props }) => {
+interface NavButtonProps extends ButtonProps {
+  to: string;
+  isActive: boolean;
+}
+
+const NavButton = ({ to, children, isActive, ...props }: NavButtonProps) => {
   const activeBg = useColorModeValue('blue.50', 'blue.900')
   const activeColor = useColorModeValue('blue.600', 'blue.200')
   const hoverBg = useColorModeValue('gray.100', 'gray.700')
