@@ -88,7 +88,21 @@ const Donate = () => {
 
 export default Donate
 
-const StatBox = ({ label, number, helpText }: any) => {
+interface StatBoxProps {
+  label: string;
+  number: string | number;
+  helpText: string;
+}
+
+interface DonationCardProps {
+  title: string;
+  description: string;
+  icon: any;
+  amount: string | number;
+  featured?: boolean;
+}
+
+const StatBox = ({ label, number, helpText }: StatBoxProps) => {
   return (
     <Stat
       px={{ base: 4, md: 8 }}
@@ -110,7 +124,7 @@ const StatBox = ({ label, number, helpText }: any) => {
   )
 }
 
-const DonationCard = ({ title, description, icon, amount, featured = false }: any) => {
+const DonationCard = ({ title, description, icon, amount, featured = false }: DonationCardProps) => {
   const bgColor = useColorModeValue(
     featured ? 'brand.50' : 'white',
     featured ? 'brand.900' : 'gray.800'

@@ -204,6 +204,16 @@ const Calendar = () => {
   )
 }
 
+interface EventCardProps {
+  title: string;
+  date: string;
+  time: string;
+  location: string;
+  category: string;
+  description: string;
+  delay: number;
+}
+
 const EventCard = ({
   title,
   date,
@@ -212,7 +222,7 @@ const EventCard = ({
   category,
   description,
   delay,
-}: any) => {
+}: EventCardProps) => {
   const bgColor = useColorModeValue('white', 'gray.800')
   const borderColor = useColorModeValue('gray.200', 'gray.700')
   const iconColor = useColorModeValue('blue.500', 'blue.200')

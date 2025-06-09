@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { Link as RouterLink } from 'react-router-dom'
 import { FaGraduationCap, FaHandHoldingHeart, FaUsers } from 'react-icons/fa'
+import { IconType } from 'react-icons'
 import { NAVBAR_HEIGHT } from '../components/Navbar'
 import { motion } from 'framer-motion'
 
@@ -24,7 +25,7 @@ const MotionVStack = motion(VStack)
 interface FeatureProps {
   title: string
   text: string
-  icon: any
+  icon: IconType
   delay: number
 }
 
@@ -94,7 +95,7 @@ const Home = () => {
   const borderColor = useColorModeValue('gray.200', 'gray.700')
 
   return (
-    <Box bg={bgColor}>
+    <Box bg={bgColor} minH="calc(100vh - 60px)">
       {/* Hero Section */}
       <Box 
         bgGradient="linear(to-r, blue.500, purple.500)"
